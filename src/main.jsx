@@ -11,12 +11,14 @@ import Profle from './component/Profle.jsx'
 import EditProfile from './component/EditProfile.jsx'
 import JobApply from './component/JobApply.jsx'
 import AppliedJob from './component/AppliedJob.jsx'
+import { store } from './app/store.js'
+import { Provider } from 'react-redux'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element= {<Layout/>}>
       <Route path='' element= {<JobList />}/>
-      <Route path='jobdetails' element= {<JobDetails/>} />
+      <Route path='jobdetails/:id' element= {<JobDetails/>} />
       <Route path='postjob' element= {<PostJob />} />
       <Route path='profile' element= {<Profle />} />
       <Route path='editprofile' element= {<EditProfile/>}/>
@@ -27,7 +29,7 @@ const router = createBrowserRouter(
 )
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  <Provider store = {store}>
     <RouterProvider router={router} />
-  </StrictMode>,
+  </Provider>,
 )

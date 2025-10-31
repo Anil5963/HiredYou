@@ -1,6 +1,7 @@
 import React from 'react'
 import ProfilePicture from '../assets/owl-head-logo.jpg'
 import StarIcon from '@mui/icons-material/Star';
+import { NavLink } from 'react-router-dom';
 
 function EditProfile() {
     return (
@@ -12,7 +13,7 @@ function EditProfile() {
                     <div className='h-60 w-60'>
                         <img src={ProfilePicture} className='h-full w-full outline-none object-cover border-3 border-gray-500 hover:border-green-500' />
                     </div>
-                    <button className='w-32 text-sm px-3 py-2 rounded-2xl bg-green-500'>Upload File</button>
+                    <button className='w-32 text-sm px-3 py-2 rounded-2xl bg-green-500 hover:bg-green-700 cursor-pointer'>Upload File</button>
                 </div>
 
 
@@ -53,7 +54,7 @@ function EditProfile() {
                         <div className="flex flex-col gap-2">
                             <input type="text" placeholder='Education Background' className="h-8 w-80 pl-3 rounded-xl outline-none border-2 border-white hover:border-green-500 focus:border-green-500" />
                         </div>
-                        <button className='text-sm px-4 py-1 rounded-xl bg-green-500'>Add</button>
+                        <button className='text-sm px-4 py-1 rounded-xl bg-green-500 hover:bg-green-700 cursor-pointer'>Add</button>
                     </div>
 
                 </div>
@@ -65,7 +66,7 @@ function EditProfile() {
                         <div className="flex flex-col gap-2">
                             <input type="text" placeholder='Your Experience' className="h-8 w-80 pl-3 rounded-xl outline-none border-2 border-white hover:border-green-500 focus:border-green-500" />
                         </div>
-                        <button className='text-sm px-4 py-1 rounded-xl bg-green-500'>Add</button>
+                        <button className='text-sm px-4 py-1 rounded-xl bg-green-500 hover:bg-green-700 cursor-pointer'>Add</button>
                     </div>
                 </div>
 
@@ -76,11 +77,13 @@ function EditProfile() {
                         <div className="flex flex-col gap-2">
                             <input type="text" placeholder='Your Projects' className="h-8 w-80 pl-3 rounded-xl outline-none border-2 border-white hover:border-green-500 focus:border-green-500" />
                         </div>
-                        <button className='text-sm px-4 py-1 rounded-xl bg-green-500'>Add</button>
+                        <button className='text-sm px-4 py-1 rounded-xl bg-green-500 hover:bg-green-700 cursor-pointer'>Add</button>
                     </div>
                 </div>
 
-                <button className='text-lg px-4 py-1 rounded-xl bg-green-500 mt-10'>Save</button>
+                <NavLink to='/profile'>
+                <button className='text-lg px-4 py-1 rounded-xl bg-green-500 mt-10 hover:bg-green-700 cursor-pointer'>Save</button>
+                </NavLink>
 
             </div>
         </div>

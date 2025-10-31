@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 function JobApply() {
     return (
@@ -33,9 +34,11 @@ function JobApply() {
                 </div>
 
                 {/* submit  */}
+                <NavLink to='/appliedjob'>
                 <div>
-                    <button className='w-32 text-xl font-bold px-2.5 py-2 rounded-2xl bg-green-500 pointer-coarse:'>Submit</button>
+                    <button className='w-32 text-xl font-bold px-2.5 py-2 rounded-2xl bg-green-500 hover:bg-green-700 pointer-coarse:'>Submit</button>
                 </div>
+                </NavLink>
             </div>
         </div>
     )

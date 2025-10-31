@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 function PostJob() {
     return (
@@ -35,9 +36,11 @@ function PostJob() {
                     <textarea className='h-80 w-full bg-gray-100 outline-none p-4 text-lg hover:border-2 hover:border-green-500 focus:border-2 focus:border-green-500 ' placeholder='Job description...'></textarea>
                 </div>
 
-                <div className='w-full flex justify-center'>
-                    <button className='flex justify-center items-center text-xl font-bold px-4 py-2 bg-green-500 hover:bg-green-700 rounded-xl'>Post Now</button>
-                </div>
+                <NavLink to="/">
+                    <div className='w-full flex justify-center'>
+                        <button className='flex justify-center items-center text-lg font-bold px-4 py-2 bg-green-500 hover:bg-green-700 rounded-xl cursor-pointer'>Post Now</button>
+                    </div>
+                </NavLink>
 
             </div>
 

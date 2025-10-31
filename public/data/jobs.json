@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "jobTitle": "Frontend Developer",
+    "companyName": "TechNova Solutions",
+    "location": "San Francisco, USA",
+    "stars": 4.7,
+    "salary": "$1,200 - $1,800 / month",
+    "workTime": "10 AM - 6 PM",
+    "postTime": "21 hours ago",
+    "description": "We are seeking a skilled Frontend Developer with experience in React, Tailwind CSS, and modern JavaScript frameworks. You’ll work closely with designers and backend engineers to build responsive and high-performing web interfaces. A deep understanding of reusable components, API integration, and accessibility standards is essential. The ideal candidate enjoys solving complex UI challenges and writing clean, maintainable code."
+  },
+  {
+    "id": 2,
+    "jobTitle": "Backend Developer",
+    "companyName": "CodeCraft Studio",
+    "location": "Berlin, Germany",
+    "stars": 4.3,
+    "salary": "$1,000 - $1,500 / month",
+    "workTime": "9 AM - 5 PM",
+    "postTime": "3 days ago",
+    "description": "We are looking for an experienced Backend Developer who can design, develop, and maintain server-side applications using Node.js and Express. The role requires expertise in database systems like MongoDB or PostgreSQL and familiarity with authentication, caching, and performance optimization. You’ll collaborate with the frontend team to ensure smooth communication between the client and the server."
+  },
+  {
+    "id": 3,
+    "jobTitle": "UI/UX Designer",
+    "companyName": "PixelNest",
+    "location": "Toronto, Canada",
+    "stars": 4.5,
+    "salary": "$800 - $1,200 / month",
+    "workTime": "Flexible",
+    "postTime": "2 days ago",
+    "description": "We’re hiring a creative UI/UX Designer who can transform user insights into visually engaging and user-friendly digital products. You will create wireframes, prototypes, and design systems using Figma and Adobe XD. The position requires strong communication skills to collaborate with product managers and engineers while maintaining a consistent design language across the platform."
+  },
+  {
+    "id": 4,
+    "jobTitle": "Full Stack Engineer",
+    "companyName": "BlueOcean Tech",
+    "location": "Singapore",
+    "stars": 4.1,
+    "salary": "$1,500 - $2,000 / month",
+    "workTime": "10 AM - 6 PM",
+    "postTime": "5 days ago",
+    "description": "Join our fast-growing engineering team as a Full Stack Engineer. You’ll build and deploy end-to-end applications using React, Node.js, and MongoDB. Candidates should understand RESTful APIs, authentication flows, and cloud deployment (AWS or Vercel). This is a hands-on role for someone who enjoys developing both frontend and backend features that scale."
+  },
+  {
+    "id": 5,
+    "jobTitle": "React Native Developer",
+    "companyName": "MobileWave Labs",
+    "location": "Austin, USA",
+    "stars": 3.9,
+    "salary": "$1,000 - $1,400 / month",
+    "workTime": "Flexible",
+    "postTime": "1 day ago",
+    "description": "We are searching for a React Native Developer passionate about crafting seamless mobile experiences. You’ll develop cross-platform applications, handle API integration, and work with native modules when needed. Experience with Expo, Redux, and performance tuning will be highly valuable. This is a remote-friendly position with flexible working hours."
+  },
+  {
+    "id": 6,
+    "jobTitle": "Junior Frontend Developer",
+    "companyName": "SoftVision",
+    "location": "Warsaw, Poland",
+    "stars": 4.6,
+    "salary": "$700 - $1,000 / month",
+    "workTime": "10 AM - 6 PM",
+    "postTime": "6 hours ago",
+    "description": "An entry-level position for those eager to grow in web development. As a Junior Frontend Developer, you’ll assist in maintaining company websites, improving page performance, and implementing design updates. You’ll gain hands-on experience with HTML, CSS, JavaScript, and React. Mentorship and growth opportunities are provided for dedicated learners."
+  },
+  {
+    "id": 7,
+    "jobTitle": "WordPress Developer",
+    "companyName": "WebMatrix Pvt. Ltd.",
+    "location": "Manchester, UK",
+    "stars": 4.3,
+    "salary": "$800 - $1,200 / month",
+    "workTime": "9 AM - 5 PM",
+    "postTime": "4 days ago",
+    "description": "We are hiring a WordPress Developer capable of building responsive themes, customizing plugins, and managing hosting environments. You should have a good understanding of PHP, HTML, CSS, and basic SEO optimization. The role involves working directly with clients to create engaging, high-quality websites for small and medium-sized businesses."
+  },
+  {
+    "id": 8,
+    "jobTitle": "DevOps Engineer",
+    "companyName": "CloudSprint",
+    "location": "Remote",
+    "stars": 4,
+    "salary": "$1,800 - $2,500 / month",
+    "workTime": "10 AM - 6 PM",
+    "postTime": "2 days ago",
+    "description": "We are looking for a DevOps Engineer who can automate and optimize cloud infrastructure for continuous integration and deployment. The ideal candidate should be familiar with Docker, Kubernetes, AWS, and CI/CD tools like GitHub Actions. You’ll work with developers to ensure fast, reliable, and scalable application releases."
+  },
+  {
+    "id": 9,
+    "jobTitle": "Software Tester (QA)",
+    "companyName": "TestPoint Labs",
+    "location": "Sydney, Australia",
+    "stars": 3.6,
+    "salary": "$700 - $1,000 / month",
+    "workTime": "9 AM - 5 PM",
+    "postTime": "5 hours ago",
+    "description": "We’re hiring a Software Tester to ensure our products maintain the highest quality standards. Responsibilities include writing test cases, performing manual and automated testing, and identifying bugs early in the development cycle. Candidates with experience using Selenium or Cypress will be prioritized."
+  },
+  {
+    "id": 10,
+    "jobTitle": "Data Analyst",
+    "companyName": "InsightWorks",
+    "location": "Remote",
+    "stars": 4.7,
+    "salary": "$1,500 - $2,000 / month",
+    "workTime": "Flexible",
+    "postTime": "3 days ago",
+    "description": "InsightWorks is seeking a Data Analyst to transform data into actionable insights. You will clean, process, and visualize datasets using Power BI or Python libraries such as Pandas and Matplotlib. The role involves close collaboration with product managers to make data-driven decisions that impact product strategy."
+  },
+  {
+    "id": 11,
+    "jobTitle": "Graphic Designer",
+    "companyName": "DesignFlow",
+    "location": "Paris, France",
+    "stars": 4,
+    "salary": "$600 - $900 / month",
+    "workTime": "10 AM - 5 PM",
+    "postTime": "1 week ago",
+    "description": "We’re looking for a talented Graphic Designer to create brand visuals, marketing assets, and digital content for social media campaigns. You must have strong skills in Adobe Illustrator, Photoshop, and modern design trends. A strong portfolio demonstrating creativity and attention to detail is required."
+  },
+  {
+    "id": 12,
+    "jobTitle": "AI Research Assistant",
+    "companyName": "NeuralCore Labs",
+    "location": "Remote",
+    "stars": 5,
+    "salary": "$2,000 - $3,000 / month",
+    "workTime": "Flexible",
+    "postTime": "1 day ago",
+    "description": "We are hiring an AI Research Assistant to support our data science and machine learning teams. You will help prepare training datasets, test neural network architectures, and analyze model performance. Strong Python programming and familiarity with TensorFlow or PyTorch is necessary. This is an excellent opportunity to work on innovative AI-driven products."
+  }
+]
