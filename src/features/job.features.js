@@ -13,6 +13,7 @@ const jobSlice = createSlice({
         jobs: [],
         savedJobs: [],
         selectedJob: [],
+        edits: [],
         status: 'idle',
         error: null
     },
@@ -24,6 +25,10 @@ const jobSlice = createSlice({
 
         selectJob: (state, action) => {
             state.selectedJob = action.payload;
+        },
+
+        edit: (state, action) => {
+            state.edits = action.payload
         }
 
     },

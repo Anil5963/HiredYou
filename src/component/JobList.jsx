@@ -8,12 +8,13 @@ import { fetchJobs, selectJob } from '../features/job.features.js';
 function JobList() {
 
     const navigate = useNavigate()
+    const dispatch = useDispatch()
+    
     const handleClick = (job) => {
         dispatch(selectJob(job))
         navigate(`/jobdetails/${job.id}`)
     }
 
-    const dispatch = useDispatch()
     const { jobs, status, error } = useSelector((state) => state.jobData)
 
     useEffect(() => {
@@ -31,7 +32,7 @@ function JobList() {
 
             {jobs.map((job) => (
                 <div className='flex flex-col gap-24' key={job.id}>
-                    <div className='border-2 border-green-500 rounded-2xl m-10 p-5' onClick={() => handleClick(job)}>
+                    <div className='border-2 border-green-500 rounded-2xl m-10 p-5 pointer-coarse:' onClick={() => handleClick(job)}>
                         <div className=''>
                             <h1 className='text-green-500 text-2xl font-bold'> {job.jobTitle}</h1>
                         </div>

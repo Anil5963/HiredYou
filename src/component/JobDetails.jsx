@@ -13,7 +13,7 @@ function JobDetails() {
   return (
     <div className='h-screen w-full bg-black'>
       <div className='pt-10 px-10'>
-        <h1 className='text-green-500 text-3xl font-bold'>{job.companyName}</h1>
+        <h1 className='text-green-500 text-3xl font-bold'>{job.jobTitle}</h1>
       </div>
       <div className='flex flex-col gap-5 font-bold text-white pt-4 px-10'>
 
@@ -47,7 +47,7 @@ function JobDetails() {
 
           <div className='flex gap-1 pl-3'>
             <BusinessCenterIcon />
-            <p className='text-lg'>Full Time</p>
+            <p className='text-lg'>{job.workTime}</p>
           </div>
 
           <p className='text-lg pl-3'>{job.salary}</p>
