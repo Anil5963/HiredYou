@@ -13,7 +13,8 @@ const jobSlice = createSlice({
         jobs: [],
         savedJobs: [],
         selectedJob: [],
-        edits: [],
+        editProfile: {},
+        postJob: [],
         status: 'idle',
         error: null
     },
@@ -27,8 +28,12 @@ const jobSlice = createSlice({
             state.selectedJob = action.payload;
         },
 
-        edit: (state, action) => {
-            state.edits = action.payload
+        editedProfile: (state, action) => {
+            state.editProfile = action.payload
+        },
+
+        postedJob: (state, action) => {
+            state.postJob.push(action.payload)
         }
 
     },
@@ -52,5 +57,5 @@ const jobSlice = createSlice({
     }
 })
 
-export const { saveJob, selectJob } = jobSlice.actions
+export const { saveJob, selectJob, editedProfile, postedJob } = jobSlice.actions
 export default jobSlice.reducer
