@@ -15,6 +15,7 @@ const jobSlice = createSlice({
         selectedJob: [],
         editProfile: {},
         postJob: [],
+        inputValue: { inputTitle: "", inputLocation: "" },
         status: 'idle',
         error: null
     },
@@ -34,6 +35,10 @@ const jobSlice = createSlice({
 
         postedJob: (state, action) => {
             state.postJob.push(action.payload)
+        },
+
+        inputsValue: (state, action) => {
+            state.inputValue = action.payload
         }
 
     },
@@ -57,5 +62,5 @@ const jobSlice = createSlice({
     }
 })
 
-export const { saveJob, selectJob, editedProfile, postedJob } = jobSlice.actions
+export const { saveJob, selectJob, editedProfile, postedJob, inputsValue } = jobSlice.actions
 export default jobSlice.reducer

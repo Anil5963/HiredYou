@@ -21,9 +21,48 @@ function JobList() {
 
     const { jobs, status, error } = useSelector((state) => state.jobData)
     const posted = useSelector((state) => state.jobData.postJob)
+    const valued = useSelector((state) => state.jobData.inputValue)
 
-    console.log("✅ Redux jobs:", jobs);
-    console.log("✅ Redux posted:", posted);
+    // const filteredJobs = jobs.filter((job) => {
+    //     const titleMatch =
+    //         !valued.inputTitle ||
+    //         job.jobTitle.toLowerCase().includes(valued.inputTitle.toLowerCase())
+
+    //     const locationMatch =
+    //         !valued.inputLocation ||
+    //         job.location.toLowerCase().includes(valued.inputLocation.toLowerCase());
+
+    //     // show job if both match
+    //     return titleMatch && locationMatch;
+    // });
+
+
+    const filteredJobs = (() => {
+        const hasTitle = valued.inputTitle.trim() !== "";
+        const hasLocation = valued.inputLocation.trim() !== "";
+
+        // if both empty → show all jobs
+        if (!hasTitle && !hasLocation) return jobs;
+
+        // filter jobs that match
+        const matches = jobs.filter((job) => {
+            const titleMatch = job.jobTitle.toLowerCase().includes(valued.inputTitle.toLowerCase());
+            const locationMatch = job.location.toLowerCase().includes(valued.inputLocation.toLowerCase());
+
+            // if both filled → both must match
+            if (hasTitle && hasLocation) return titleMatch && locationMatch;
+
+            // if only one filled → match that one
+            if (hasTitle) return titleMatch;
+            if (hasLocation) return locationMatch;
+        });
+
+        // if both fields filled but no match → show all
+        if (hasTitle && hasLocation && matches.length === 0) return jobs;
+
+        return matches;
+    })();
+
 
     useEffect(() => {
         if (status === 'idle') {
@@ -38,7 +77,7 @@ function JobList() {
     return (
         <div className=' w-full bg-black'>
 
-            {jobs.map((job) => (
+            {filteredJobs.map((job) => (
                 <div className='flex flex-col gap-24' key={job.id}>
                     <div className='border-2 border-green-500 rounded-2xl m-10 p-5 pointer-coarse:' onClick={() => handleClick(job)}>
                         <div className=''>

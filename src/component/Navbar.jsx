@@ -3,10 +3,14 @@ import Logo from '../assets/owl-logo.jpg'
 import User from '../assets/owl-head-logo.jpg'
 import AllInboxIcon from '@mui/icons-material/AllInbox';
 import { NavLink } from 'react-router-dom';
+import { inputsValue } from '../features/job.features';
+import { useDispatch } from 'react-redux';
 
 function Navbar() {
-    // const [postJob, setPostJob] = useState[""]
-    // const [profile, setProfile] = useState[""]
+    const [inputTitle, setInputTitle] = useState("")
+    const [inputLocation, setInputLocation] = useState("")
+
+    const dispatch = useDispatch()
 
     return (
         <div className='xl:h-18 xl:w-full bg-black lg:h-16 lg:w-full md:h-12 md:w-full sm:h-10 sm:w-full'>
@@ -20,15 +24,28 @@ function Navbar() {
                 </NavLink>
 
                 <div className='flex items-center xl:h-full xl:ml-10 lg:h-16 lg:ml-5 md:h-12 md:ml-3 sm:h-10 sm:ml-1.5'>
-                    <input type="text" placeholder='Job Title, Skills Or Company' className='xl:h-10 xl:w-72 rounded-xl xl:pl-3 lg:h-8 lg:w-60 lg:pl-2 md:h-7 md:w-52 md:pl-2 sm:h-5 sm:w-36 sm:pl-1 sm:text-xs outline-none border-2 border-gray-100 hover:border-2 hover:border-green-500 focus:border-2 focus:border-green-500' />
+                    <input
+                        type="text"
+                        value={inputTitle}
+                        onChange={(e) => setInputTitle(e.target.value)}
+                        placeholder='Job Title, Skills Or Company'
+                        className='xl:h-10 xl:w-72 rounded-xl xl:pl-3 lg:h-8 lg:w-60 lg:pl-2 md:h-7 md:w-52 md:pl-2 sm:h-5 sm:w-36 sm:pl-1 sm:text-xs outline-none border-2 border-gray-100 hover:border-2 hover:border-green-500 focus:border-2 focus:border-green-500' />
                 </div>
 
                 <div className='flex items-center xl:h-full xl:ml-10 lg:h-16 lg:ml-5 md:h-12 md:ml-3 sm:h-10 sm:ml-1.5'>
-                    <input type="text" placeholder='City, State, Zip Or Remote' className='xl:h-10 xl:w-72 rounded-xl xl:pl-3 lg:h-8 lg:w-60 lg:pl-2 md:h-7 md:w-52 md:pl-2 sm:h-5 sm:w-36 sm:pl-1 sm:text-xs outline-none border-2 border-gray-100 hover:border-2 hover:border-green-500 focus:border-2 focus:border-green-500' />
+                    <input
+                        type="text"
+                        value={inputLocation}
+                        onChange={(e) => setInputLocation(e.target.value)}
+                        placeholder='City, State, Zip Or Remote'
+                        className='xl:h-10 xl:w-72 rounded-xl xl:pl-3 lg:h-8 lg:w-60 lg:pl-2 md:h-7 md:w-52 md:pl-2 sm:h-5 sm:w-36 sm:pl-1 sm:text-xs outline-none border-2 border-gray-100 hover:border-2 hover:border-green-500 focus:border-2 focus:border-green-500' />
                 </div>
 
                 <div className='flex items-center xl:h-full xl:ml-10 lg:h-16 lg:ml-5 md:h-12 md:ml-3'>
-                    <button className='xl:h-10 xl:w-28 border-none xl:bg-green-500 xl:rounded-2xl xl:font-bold lg:h-8 lg:w-24 lg:bg-green-400 lg:rounded-xl lg:font-bold lg:text-sm sm:h-5 sm:w-18 sm:bg-green-400 sm:rounded-xl sm:font-medium sm:text-xs md:h-6 md:w-20 md:bg-green-400 md:rounded-xl md:font-semibold md:text-xs cursor-pointer'>Search Jobs</button>
+                    <button
+                        className='xl:h-10 xl:w-28 border-none xl:bg-green-500 xl:rounded-2xl xl:font-bold lg:h-8 lg:w-24 lg:bg-green-400 lg:rounded-xl lg:font-bold lg:text-sm sm:h-5 sm:w-18 sm:bg-green-400 sm:rounded-xl sm:font-medium sm:text-xs md:h-6 md:w-20 md:bg-green-400 md:rounded-xl md:font-semibold md:text-xs hover:bg-green-700 cursor-pointer'
+                        onClick={() => dispatch(inputsValue({ inputTitle, inputLocation }))}
+                    >Search Jobs</button>
                 </div>
 
                 <div className='flex items-center xl:h-full xl:ml-auto xl:gap-8 lg:h-16 lg:ml-auto lg:gap-4 md:h-12 md:ml-auto md:gap-2 sm:h-10 sm:ml-auto sm:gap-1.5'>

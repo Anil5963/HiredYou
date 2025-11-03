@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { NavLink, useNavigate } from 'react-router-dom'
+import { postedJob } from '../features/job.features'
 
 function PostJob() {
 
@@ -12,6 +13,8 @@ function PostJob() {
 
     const dispatch = useDispatch()
     const navigate = useNavigate()
+
+    
 
     return (
         <div className='bg-black w-full'>
@@ -76,7 +79,8 @@ function PostJob() {
                             onClick={() => {
                                 const stars = Math.max(3, Math.random() * 5)
                                 const postTime = Date.now()
-                                dispatch(postedJob({ jobTitle, companyName, location, salary, jobDescription, stars, postTime }))
+                                const id = Date.now().toString()
+                                dispatch(postedJob({ jobTitle, companyName, location, salary, jobDescription, stars, postTime, id }))
                                 navigate("/")
                             }
                             }
