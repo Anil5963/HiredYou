@@ -28,55 +28,113 @@ function JobDetails() {
       ) : (
 
         <div>
-          <div className='pt-10 px-10'>
-            <h1 className='text-green-500 text-3xl font-bold'>{job.jobTitle}</h1>
+          <div className=' pt-5 px-3 lg:pt-10 lg:px-10'>
+            <h1 className='text-green-500 text-lg font-bold sm:text-xl sm:font-bold lg:text-3xl lg:font-bold'>{job.jobTitle}</h1>
           </div>
-          <div className='flex flex-col gap-5 font-bold text-white pt-4 px-10'>
+          <div className='flex flex-col gap-2 pt-2 px-3 sm:gap-3 sm:pt-3 sm:px-5 lg:gap-5 lg:font-bold text-white lg:pt-4 lg:px-10'>
 
 
             <div className='flex justify-between'>
 
-              <div className='flex flex-col gap-5'>
+              <div className='flex flex-col gap-1 sm:gap-3 lg:gap-5'>
                 {/* company logo and name  */}
-                <div className='flex gap-1 items-center'>
-                  <BusinessIcon />
-                  <p className='text-xl'>{job.companyName}</p>
+                <div className='flex gap-0.5 sm:gap-1 lg:gap-1 items-center'>
+                  <BusinessIcon
+                    sx={{
+                      fontSize: {
+                        xxs: 10,
+                        xs: 12,
+                        sm: 14,
+                        md: 16,
+                        lg: 18,
+                        xl: 20,
+                      }
+                    }}
+                  />
+                  <p className=' text-base sm:text-lg lg:text-xl'>{job.companyName}</p>
                 </div>
 
                 {/* location  */}
                 <div className='flex items-center'>
-                  <LocationOnIcon />
-                  <p className='text-xl'>{job.location}</p>
+                  <LocationOnIcon
+                    sx={{
+                      fontSize: {
+                        xxs: 12,
+                        xs: 12,
+                        sm: 14,
+                        md: 16,
+                        lg: 18,
+                        xl: 20,
+                      }
+                    }}
+                  />
+                  <p className='text-base sm:text-lg lg:text-xl'>{job.location}</p>
                 </div>
               </div>
 
               <NavLink to="/jobapply">
                 <div>
-                  <button className='bg-green-500 px-5 py-2 rounded-xl font-bold text-xl'>Apply <OpenInNewIcon /></button>
+                  <button
+                    className='bg-green-500 px-2 py-1 text-sm font-semibold sm:px-4 sm:py-2 sm:text-base sm:font-semibold lg:px-5 lg:py-2 rounded-xl lg:font-bold lg:text-xl'>Apply
+                    <OpenInNewIcon
+                      sx={{
+                        fontSize: {
+                          xxs: 10,
+                          xs: 12,
+                          sm: 14,
+                          md: 16,
+                          lg: 18,
+                          xl: 20,
+                        }
+                      }}
+                    />
+                  </button>
                 </div>
               </NavLink>
             </div>
 
             {/* Job Details  */}
-            <div className='flex flex-col gap-2'>
-              <p className='text-xl font-bold'>Job Details</p>
+            <div className='flex flex-col gap-1 lg:gap-2'>
+              <p className='text-base sm:text-lg sm:font-semibold lg:text-xl lg:font-bold'>Job Details</p>
 
-              <div className='flex gap-1 pl-3'>
-                <BusinessCenterIcon />
-                <p className='text-lg'>{job.workTime}</p>
+              <div className='flex items-center gap-1 pl-3'>
+                <BusinessCenterIcon
+                  sx={{
+                    fontSize: {
+                      xxs: 12,
+                      xs: 12,
+                      sm: 14,
+                      md: 16,
+                      lg: 18,
+                      xl: 20,
+                    }
+                  }}
+                />
+                <p className='text-xs sm:text-base lg:text-lg'>{job.workTime}</p>
               </div>
 
-              <p className='text-lg pl-3'>{job.salary}</p>
+              <p className='text-xs sm:text-base pl-3  lg:text-lg'>{job.salary}</p>
 
-              <div className='flex gap-1 pl-3'>
-                <AccessTimeIcon />
-                <p className='text-lg'>{job.postTime}</p>
+              <div className='flex items-center gap-1 pl-3'>
+                <AccessTimeIcon
+                  sx={{
+                    fontSize: {
+                      xxs: 12,
+                      xs: 12,
+                      sm: 14,
+                      md: 16,
+                      lg: 18,
+                      xl: 20,
+                    }
+                  }}
+                />
+                <p className='text-xs sm:text-base lg:text-lg'>{job.postTime}</p>
               </div>
             </div>
 
           </div>
-          <div className='px-10 pt-5'>
-            <p className='text-lg'>{job.description}</p>
+          <div className='px-3 pt-2 sm:px-5 sm:pt-3 lg:px-10 lg:pt-5'>
+            <p className='text-sm sm:text-base lg:text-lg'>{job.description}</p>
           </div>
         </div>
       )

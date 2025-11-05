@@ -13,35 +13,47 @@ function Profle() {
   return (
     <div className=' w-full bg-black'>
 
-      <div className='p-10' >
+      <div className='p-3 sm:p-5 lg:p-10' >
 
         {/* profile image  */}
-        <div className='h-40 w-40 rounded-full overflow-hidden border-4 border-green-500'>
+        <div className='h-20 w-20 sm:h-40 sm:w-40 rounded-full overflow-hidden border-4 border-green-500'>
           <img src={editinfo?.image || ProfilePicture} className='h-full w-full object-cover' />
         </div>
 
         <div className='flex justify-between'>
-          <div className='pt-5 flex flex-col gap-5'>
+          <div className='pt-5 flex flex-col gap-2 sm:gap-4 lg:gap-5'>
             {/* status  */}
-            <p className='text-2xl font-bold'>Status: Active</p>
+            <p className="text-lg sm:text-xl lg:text-2xl font-bold">Status: Active</p>
 
             {/* name  */}
             <div className='flex gap-2'>
-              <p className='text-2xl font-bold'>{editinfo?.firstName || "Nil"}</p>
-              <p className='text-2xl font-bold'>{editinfo?.lastName || "Nil"}</p>
+              <p className="text-lg sm:text-xl lg:text-2xl font-bold">{editinfo?.firstName || "Nil"}</p>
+              <p className="text-lg sm:text-xl lg:text-2xl font-bold">{editinfo?.lastName || "Nil"}</p>
             </div>
 
             {/* reviews  */}
-            <div className='flex'>
-              <p className='text-2xl font-bold'>Reviews: 4.2</p>
-              <StarIcon sx={{ fontSize: 24 }} className='mt-1.5 text-green-500' />
+            <div className='flex items-center'>
+              <p className="text-lg sm:text-xl lg:text-2xl font-bold">Reviews: 4.2</p>
+              <StarIcon
+                sx={{
+                  fontSize: {
+                    xxs: 12,
+                    xs: 12,
+                    sm: 14,
+                    md: 16,
+                    lg: 18,
+                    xl: 20,
+                  }
+                }}
+                className='mt-1.5 text-green-500' />
             </div>
           </div>
 
           {/* edit button  */}
           <NavLink to="/editprofile">
             <div className='pt-5'>
-              <button className="font-bold text-xl px-5 py-2 bg-green-500 hover:bg-green-700 transition-all duration-200 rounded-2xl cursor-pointer">
+              <button 
+             className='text-sm sm:text-base lg:text-lg px-3 sm:px-3 lg:px-4 py-1 rounded-xl bg-green-500 mt-10 hover:bg-green-700 cursor-pointer'>
                 Edit
               </button>
             </div>
@@ -51,22 +63,15 @@ function Profle() {
 
         {/* project  */}
         <div className='flex flex-col pt-8 gap-2'>
-          <p className='text-2xl font-bold'>Project Overview</p>
+          <p className="text-lg sm:text-xl lg:text-2xl font-bold">Project Overview</p>
           <div className='flex flex-col gap-1'>
-            <p className='text-xl font-semibold'>Completed Project: {editinfo?.completedProject || 5}</p>
-            <p className='text-xl font-semibold'>Ongoing Project: {editinfo?.OngoingProject || 1}</p>
-
-            {/* <NavLink to="/appliedjob">
-                  <div className='flex text-green-500 hover:text-green-700 gap-1 cursor-pointer w-48'>
-                    <p className='text-xl font-semibold '>Applied Job: </p>
-                    <p className='text-xl font-semibold'>0</p>
-                  </div>
-                </NavLink> */}
+            <p className="text-base sm:text-lg lg:text-xl font-semibold">Completed Project: {editinfo?.completedProject || 5}</p>
+            <p className="text-base sm:text-lg lg:text-xl font-semibold">Ongoing Project: {editinfo?.OngoingProject || 1}</p>
 
             <NavLink to="/appliedjob">
               <div className='flex text-green-500 hover:text-green-700 gap-1 cursor-pointer w-48'>
-                <p className='text-xl font-semibold '>Applied Job: </p>
-                <p className='text-xl font-semibold'>{jobs?.length || 0}</p>
+                <p className="text-base sm:text-lg lg:text-xl font-semibold">Applied Job: </p>
+                <p className="text-base sm:text-lg lg:text-xl font-semibold">{jobs?.length || 0}</p>
               </div>
             </NavLink>
 
@@ -75,28 +80,28 @@ function Profle() {
 
         {/* Education Section */}
         <div className="flex flex-col pt-8 gap-2">
-          <p className="text-2xl font-bold">Education</p>
+          <p className="text-lg sm:text-xl lg:text-2xl font-bold">Education</p>
           <div className="flex flex-col gap-1">
-            <p className="text-xl font-semibold">{editinfo?.education || "+2 in Computer Science"}</p>
-            <p className="text-xl font-semibold">{editinfo?.education || "Bachelor's in Computer Science"}</p>
+            <p className="text-base sm:text-lg lg:text-xl font-semibold">{editinfo?.education || "+2 in Computer Science"}</p>
+            <p className="text-base sm:text-lg lg:text-xl font-semibold">{editinfo?.education || "Bachelor's in Computer Science"}</p>
           </div>
         </div>
 
         {/* Experience Section */}
         <div className="flex flex-col pt-8 gap-2">
-          <p className="text-2xl font-bold">Experience</p>
+          <p className="text-lg sm:text-xl lg:text-2xl font-bold">Experience</p>
           <div className="flex flex-col gap-1">
-            <p className="text-xl font-semibold">{editinfo?.experience || "1 year as Frontend Developer at Sipalaya Info Tech"}</p>
-            <p className="text-xl font-semibold">{editinfo?.experience || "2 years remote experience as Frontend Developer"}</p>
+            <p className="text-base sm:text-lg lg:text-xl font-semibold">{editinfo?.experience || "1 year as Frontend Developer at Sipalaya Info Tech"}</p>
+            <p className="text-base sm:text-lg lg:text-xl font-semibold">{editinfo?.experience || "2 years remote experience as Frontend Developer"}</p>
           </div>
         </div>
 
         {/* Projects Section */}
         <div className="flex flex-col pt-8 gap-2">
-          <p className="text-2xl font-bold">Projects</p>
+          <p className="text-lg sm:text-xl lg:text-2xl font-bold">Projects</p>
           <div className="flex flex-col gap-1">
-            <p className="text-xl font-semibold">{editinfo?.project || "Amazon UI Clone (React.js + Tailwind CSS)"}</p>
-            <p className="text-xl font-semibold">{editinfo?.project || "Job Portal Website"}</p>
+            <p className="text-base sm:text-lg lg:text-xl font-semibold">{editinfo?.project || "Amazon UI Clone (React.js + Tailwind CSS)"}</p>
+            <p className="text-base sm:text-lg lg:text-xl font-semibold">{editinfo?.project || "Job Portal Website"}</p>
           </div>
         </div>
 
