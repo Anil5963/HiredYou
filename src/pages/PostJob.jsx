@@ -22,55 +22,55 @@ function PostJob() {
 
                 {/* job title  */}
                 <div>
-                    <p className='text-lg sm:text-xl lg:text-2xl'>Job Titles</p>
+                    <p className='text-lg sm:text-xl lg:text-2xl text-white'>Job Titles</p>
                     <input
                         type="text"
                         value={jobTitle}
                         placeholder='Job titles'
                         onChange={(e) => setJobTitle(e.target.value)}
-                        className="h-6 text-xs w-48 sm:h-6 lg:h-8 sm:w-52 lg:w-72 pl-3 rounded-xl outline-none border-2 border-white hover:border-green-500 focus:border-green-500" />
+                        className="h-6 text-xs w-48 sm:h-6 lg:h-8 sm:w-52 lg:w-72 pl-3 rounded-xl outline-none border-2 border-white hover:border-green-500 focus:border-green-500 text-white" />
                 </div>
 
                 {/* company name  */}
                 <div>
-                    <p className='text-lg sm:text-xl lg:text-2xl'>Company Name</p>
+                    <p className='text-lg sm:text-xl lg:text-2xl text-white'>Company Name</p>
                     <input
                         type="text"
                         value={companyName}
                         onChange={(e) => setCompanyName(e.target.value)}
                         placeholder='Company Name'
-                        className="h-6 text-xs w-48 sm:h-6 lg:h-8 sm:w-52 lg:w-72 pl-3 rounded-xl outline-none border-2 border-white hover:border-green-500 focus:border-green-500" />
+                        className="text-white h-6 text-xs w-48 sm:h-6 lg:h-8 sm:w-52 lg:w-72 pl-3 rounded-xl outline-none border-2 border-white hover:border-green-500 focus:border-green-500" />
                 </div>
 
                 {/* location  */}
                 <div>
-                    <p className='text-lg sm:text-xl lg:text-2xl'>Location</p>
+                    <p className='text-lg sm:text-xl lg:text-2xl text-white'>Location</p>
                     <input
                         type="text"
                         value={location}
                         onChange={(e) => setLocation(e.target.value)}
                         placeholder='Location'
-                        className="h-6 text-xs w-48 sm:h-6 lg:h-8 sm:w-52 lg:w-72 pl-3 rounded-xl outline-none border-2 border-white hover:border-green-500 focus:border-green-500" />
+                        className="text-white h-6 text-xs w-48 sm:h-6 lg:h-8 sm:w-52 lg:w-72 pl-3 rounded-xl outline-none border-2 border-white hover:border-green-500 focus:border-green-500" />
                 </div>
 
                 {/* salary  */}
                 <div>
-                    <p className='text-lg sm:text-xl lg:text-2xl'>Salary</p>
+                    <p className='text-lg sm:text-xl lg:text-2xl text-white'>Salary</p>
                     <input
                         type="text"
                         value={salary}
                         onChange={(e) => setSalary(e.target.value)}
                         placeholder='Salary'
-                        className="h-6 text-xs w-48 sm:h-6 lg:h-8 sm:w-56 lg:w-72 pl-3 rounded-xl outline-none border-2 border-white hover:border-green-500 focus:border-green-500" />
+                        className="text-white h-6 text-xs w-48 sm:h-6 lg:h-8 sm:w-56 lg:w-72 pl-3 rounded-xl outline-none border-2 border-white hover:border-green-500 focus:border-green-500" />
                 </div>
 
                 {/* job description  */}
                 <div className='flex flex-col gap-3'>
-                    <p className='text-lg sm:text-xl lg:text-2xl'>Job Description</p>
+                    <p className='text-lg sm:text-xl lg:text-2xl text-white'>Job Description</p>
                     <textarea
                         value={jobDescription}
                         onChange={(e) => setJobDescription(e.target.value)}
-                        className='h-80 w-full p-1.5 text-xs bg-gray-100 outline-none sm:p-2 sm:text-base lg:p-4 lg:text-lg hover:border-2 hover:border-green-500 focus:border-2 focus:border-green-500' placeholder='Job description...'></textarea>
+                        className='text-white h-80 w-full p-1.5 text-xs bg-gray-100 outline-none sm:p-2 sm:text-base lg:p-4 lg:text-lg hover:border-2 hover:border-green-500 focus:border-2 focus:border-green-500' placeholder='Job description...'></textarea>
                 </div>
 
                 <NavLink to="/">
@@ -84,7 +84,7 @@ function PostJob() {
                                 navigate("/")
                             }
                             }
-                            className='w-24 text-base font-semibold px-1.5 py-1  sm:text-lg sm:font-semibold sm:w-28 lg:text-xl lg:font-bold lg:px-2.5 lg:py-2 lg:w-32 rounded-2xl bg-green-500 hover:bg-green-700 pointer-coarse:' >Post Now</button>
+                            className='text-white w-24 text-base font-semibold px-1.5 py-1  sm:text-lg sm:font-semibold sm:w-28 lg:text-xl lg:font-bold lg:px-2.5 lg:py-2 lg:w-32 rounded-2xl bg-green-500 hover:bg-green-700 pointer-coarse:' >Post Now</button>
                     </div>
                 </NavLink>
 

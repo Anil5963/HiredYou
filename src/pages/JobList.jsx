@@ -72,10 +72,10 @@ function JobList() {
                         </div>
 
                         <div className='flex flex-col gap-0.5 xs:gap-2 sm:flex-row sm:gap-4 md:flex-row md:gap-5 lg:gap-6 xl:gap-6 2xl:gap-6 text-white lg:pt-2 xl:pt-3 2xl:pt-4 '>
-                            <p className='text-base xs:text-base sm:text-lg md:text-lg md:font-semibold lg:text-xl lg:font-bold xl:text-xl xl:font-bold 2xl:text-xl 2xl:font-bold'>{job.companyName} </p>
-                            <p className='text-base xs:text-base sm:text-lg md:text-lg md:font-semibold lg:text-xl lg:font-bold xl:text-xl xl:font-bold 2xl:text-xl 2xl:font-bold'> {job.location} </p>
+                            <p className='text-base xs:text-base sm:text-lg md:text-lg md:font-semibold lg:text-xl lg:font-bold xl:text-xl xl:font-bold 2xl:text-xl 2xl:font-bold text-white'>{job.companyName} </p>
+                            <p className='text-base xs:text-base sm:text-lg md:text-lg md:font-semibold lg:text-xl lg:font-bold xl:text-xl xl:font-bold 2xl:text-xl 2xl:font-bold text-white'> {job.location} </p>
                             <div className='flex items-center gap-0.5'>
-                                <p className='text-base xs:text-base sm:text-lg md:text-lg md:font-semibold lg:text-xl lg:font-bold xl:text-xl xl:font-bold 2xl:text-xl 2xl:font-bold'> {job.stars} </p>
+                                <p className='text-base xs:text-base sm:text-lg md:text-lg md:font-semibold lg:text-xl lg:font-bold xl:text-xl xl:font-bold 2xl:text-xl 2xl:font-bold text-white'> {job.stars} </p>
                                 <span className='text-gold'>
                                     <StarIcon
                                         sx={{
@@ -96,11 +96,11 @@ function JobList() {
                         </div>
 
                         <div className='sm:pt-1 lg:pt-2 xl:pt-2.5 2xl:pt-3'>
-                            <p className='text-xs sm:text-base md:text-base lg:text-lg  xl:text-lg  2xl:text-lg '> {job.description} </p>
+                            <p className='text-xs sm:text-base md:text-base lg:text-lg  xl:text-lg  2xl:text-lg text-white'> {job.description} </p>
                         </div>
                         <div className='flex flex-col mt-1 gap-1 sm:flex-row sm:gap-4 md:gap-8 lg:gap-12 lg:pt-2 xl:pt-3 xl:gap-16 2xl:pt-3 2xl:gap-20 '>
                             <p className='text-green-500 text-sm sm:text-base md:text-lg md:font-semibold lg:text-xl lg:font-semi-bold xl:text-xl xl:font-semibold 2xl:font-semibold 2xl:text-xl'> {job.salary} </p>
-                            <p className='text-xs sm:text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-xl'> {job.postTime} </p>
+                            <p className='text-xs sm:text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-xl text-white'> {job.postTime} </p>
                         </div>
                     </div>
                 </div>
@@ -116,10 +116,10 @@ function JobList() {
                         </div>
 
                         <div className='flex flex-col gap-0.5 xs:gap-2 sm:flex-row sm:gap-4 md:flex-row md:gap-5 lg:gap-6 xl:gap-6 2xl:gap-6 text-white lg:pt-2 xl:pt-3 2xl:pt-4 '>
-                            <p className='text-base xs:text-base sm:text-lg md:text-lg md:font-semibold lg:text-xl lg:font-bold xl:text-xl xl:font-bold 2xl:text-xl 2xl:font-bold'>{post.companyName} </p>
-                            <p className='text-base xs:text-base sm:text-lg md:text-lg md:font-semibold lg:text-xl lg:font-bold xl:text-xl xl:font-bold 2xl:text-xl 2xl:font-bold'> {post.location} </p>
+                            <p className='text-base xs:text-base sm:text-lg md:text-lg md:font-semibold lg:text-xl lg:font-bold xl:text-xl xl:font-bold 2xl:text-xl 2xl:font-bold text-white'>{post.companyName} </p>
+                            <p className='text-base xs:text-base sm:text-lg md:text-lg md:font-semibold lg:text-xl lg:font-bold xl:text-xl xl:font-bold 2xl:text-xl 2xl:font-bold text-white'> {post.location} </p>
                             <div className='flex items-center gap-0.5'>
-                                <p className='text-base xs:text-base sm:text-lg md:text-lg md:font-semibold lg:text-xl lg:font-bold xl:text-xl xl:font-bold 2xl:text-xl 2xl:font-bold'> {post.stars} </p>
+                                <p className='text-base xs:text-base sm:text-lg md:text-lg md:font-semibold lg:text-xl lg:font-bold xl:text-xl xl:font-bold 2xl:text-xl 2xl:font-bold text-white'> {post.stars} </p>
                                 <span className='text-gold'>
                                     <StarIcon
                                         sx={{
@@ -139,44 +139,15 @@ function JobList() {
                         </div>
 
                         <div className='lg:pt-2 xl:pt-2.5 2xl:pt-3'>
-                            <p className='text-xs sm:text-base md:text-base lg:text-lg  xl:text-lg  2xl:text-lg '> {post.jobDescription} </p>
+                            <p className='text-xs sm:text-base md:text-base lg:text-lg  xl:text-lg  2xl:text-lg text-white'> {post.jobDescription} </p>
                         </div>
                         <div className='flex flex-col mt-1 gap-1 sm:flex-row sm:gap-2 md:gap-4 lg:gap-8 lg:pt-2 xl:pt-3 xl:gap-12 2xl:pt-3 2xl:gap-20 '>
                             <p className='text-green-500 text-sm sm:text-base md:text-lg md:font-semibold lg:text-xl lg:font-semi-bold xl:text-xl xl:font-semibold 2xl:font-semibold 2xl:text-xl'> {post.salary} </p>
-                            <p className='text-xs sm:text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-xl'> {post.postTime} </p>
+                            <p className='text-xs sm:text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-xl text-white'> {post.postTime} </p>
                         </div>
                     </div>
                 </div>
             ))}
-
-
-            {/* {posted.map((post) => (
-                <div className='flex flex-col gap-24' key={post.id}>
-                    <div className='border-2 border-green-500 rounded-2xl m-10 p-5 pointer-coarse:' onClick={() => handlePost(post)}>
-                        <div className=''>
-                            <h1 className='text-green-500 text-2xl font-bold'> {post.jobTitle}</h1>
-                        </div>
-                        <div className='flex gap-6 font-bold text-white pt-4 '>
-                            <p className='text-xl font-bold'>{post.companyName} </p>
-                            <p className='text-xl font-bold'> {post.location} </p>
-                            <div className='flex items-center gap-0.5'>
-                                <p className='text-xl font-bold'> {post.stars} </p>
-                                <span className='text-gold'>
-                                    <StarIcon sx={{ fontSize: 24, color: "#22c55e" }} />
-                                </span>
-                            </div>
-
-                        </div>
-                        <div className='pt-3'>
-                            <p className='text-lg font-semibold'> {post.jobDescription} </p>
-                        </div>
-                        <div className='flex pt-3 gap-20'>
-                            <p className='text-green-500 font-semibold text-xl'> {post.salary} </p>
-                            <p className='text-xl font-semibold'> {post.postTime} </p>
-                        </div>
-                    </div>
-                </div>
-            ))} */}
 
 
         </div>

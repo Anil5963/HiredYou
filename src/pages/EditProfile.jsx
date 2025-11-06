@@ -49,27 +49,27 @@ function EditProfile() {
                         onChange={handleFileChange}
                     />
 
-                    <button className='w-24 sm:w-28 lg:w-32 text-xs px-2 py-1 sm:text-sm sm:px-2 sm:py-1 lg:text-base  rounded-2xl bg-green-500 hover:bg-green-700 pointer-coarse:' onClick={uploadImage}>Upload File</button>
+                    <button className='text-white w-24 sm:w-28 lg:w-32 text-xs px-2 py-1 sm:text-sm sm:px-2 sm:py-1 lg:text-base  rounded-2xl bg-green-500 hover:bg-green-700 pointer-coarse:' onClick={uploadImage}>Upload File</button>
                 </div>
 
 
                 {/* name  */}
                 <div className='pt-4 sm:pt-6 lg:pt-8 flex flex-col gap-2'>
-                    <p className='text-lg sm:text-xl lg:text-2xl font-bold'>Name</p>
+                    <p className='text-lg sm:text-xl lg:text-2xl font-bold text-white'>Name</p>
                     <div className='flex flex-col gap-2 sm:gap-5 sm:flex-row lg:gap-10'>
                         <input
                             type="text"
                             placeholder='Enter your First Name'
                             value={firstName}
                             onChange={(e) => setFirstName(e.target.value)}
-                            className="h-6 text-xs w-48 sm:h-6 lg:h-8 sm:w-52 lg:w-72 pl-3 rounded-xl outline-none border-2 border-white hover:border-green-500 focus:border-green-500" />
+                            className="h-6 text-xs w-48 sm:h-6 lg:h-8 sm:w-52 lg:w-72 pl-3 rounded-xl outline-none border-2 border-white hover:border-green-500 focus:border-green-500 text-white" />
 
                         <input
                             type="text"
                             placeholder='Enter your Last Name'
                             value={lastName}
                             onChange={(e) => setLastName(e.target.value)}
-                            className="h-6 text-xs w-48 sm:h-6 lg:h-8 sm:w-52 lg:w-72 pl-3 rounded-xl outline-none border-2 border-white hover:border-green-500 focus:border-green-500" />
+                            className="h-6 text-xs w-48 sm:h-6 lg:h-8 sm:w-52 lg:w-72 pl-3 rounded-xl outline-none border-2 border-white hover:border-green-500 focus:border-green-500 text-white" />
                     </div>
                 </div>
 
@@ -77,27 +77,27 @@ function EditProfile() {
 
                 {/* project  */}
                 <div className='flex flex-col pt-4 sm:pt-6 lg:pt-8 gap-2'>
-                    <p className='text-lg sm:text-xl lg:text-2xl font-bold'>Project Overview</p>
+                    <p className='text-lg sm:text-xl lg:text-2xl font-bold text-white'>Project Overview</p>
                     <div className='flex flex-col gap-2'>
 
                         <div className='flex flex-col sm:flex-row gap-2'>
-                            <p className='text-lg sm:text-xl lg:text-2xl font-semibold'>Completed Project: </p>
+                            <p className='text-lg sm:text-xl lg:text-2xl font-semibold text-white'>Completed Project: </p>
                             <input
                                 type="text"
                                 placeholder='Completed Project'
                                 value={completedProject}
                                 onChange={(e) => setComplitedProject(e.target.value)}
-                                className="h-6 text-xs w-48 sm:h-6 lg:h-8 sm:w-52 lg:w-72 pl-3 rounded-xl outline-none border-2 border-white hover:border-green-500 focus:border-green-500" />
+                                className="h-6 text-xs w-48 sm:h-6 lg:h-8 sm:w-52 lg:w-72 pl-3 rounded-xl outline-none border-2 border-white hover:border-green-500 focus:border-green-500 text-white" />
                         </div>
 
                         <div className='flex flex-col sm:flex-row gap-2'>
-                            <p className='text-lg sm:text-xl lg:text-2xl font-semibold'>Ongoing Project: </p>
+                            <p className='text-lg sm:text-xl lg:text-2xl font-semibold text-white'>Ongoing Project: </p>
                             <input
                                 type="text"
                                 placeholder='Ongoing Project'
                                 value={ongoingProject}
                                 onChange={(e) => setOngoingProject(e.target.value)}
-                                className="h-6 text-xs w-48 sm:h-6 lg:h-8 sm:w-52 lg:w-72 pl-3 rounded-xl outline-none border-2 border-white hover:border-green-500 focus:border-green-500" />
+                                className="h-6 text-xs w-48 sm:h-6 lg:h-8 sm:w-52 lg:w-72 pl-3 rounded-xl outline-none border-2 border-white hover:border-green-500 focus:border-green-500 text-white" />
                         </div>
 
                     </div>
@@ -106,7 +106,7 @@ function EditProfile() {
 
                 {/* Education Section */}
                 <div className="flex flex-col pt-8 gap-2">
-                    <p className="text-lg sm:text-xl lg:text-2xl font-bold">Education</p>
+                    <p className="text-lg sm:text-xl lg:text-2xl font-bold text-white">Education</p>
                     <div className='flex gap-2 sm:gap-5 lg:gap-10'>
                         <div className="flex flex-col gap-2">
                             <input
@@ -114,16 +114,16 @@ function EditProfile() {
                                 placeholder='Education Background'
                                 value={education}
                                 onChange={(e) => setEducation(e.target.value)}
-                                className="h-6 text-xs w-48 sm:h-6 lg:h-8 sm:w-52 lg:w-72 pl-3 rounded-xl outline-none border-2 border-white hover:border-green-500 focus:border-green-500" />
+                                className="h-6 text-xs w-48 sm:h-6 lg:h-8 sm:w-52 lg:w-72 pl-3 rounded-xl outline-none border-2 border-white hover:border-green-500 focus:border-green-500 text-white" />
                         </div>
-                        <button className='text-sm px-4 py-1 rounded-xl bg-green-500 hover:bg-green-700 cursor-pointer'>Add</button>
+                        <button className='text-sm px-4 py-1 rounded-xl bg-green-500 hover:bg-green-700 cursor-pointer text-white'>Add</button>
                     </div>
 
                 </div>
 
                 {/* Experience Section */}
                 <div className="flex flex-col pt-8 gap-2">
-                    <p className="text-lg sm:text-xl lg:text-2xl font-bold">Experience</p>
+                    <p className="text-lg sm:text-xl lg:text-2xl font-bold text-white">Experience</p>
                     <div className='flex gap-2 sm:gap-5 lg:gap-10'>
                         <div className="flex flex-col gap-2">
                             <input
@@ -131,15 +131,15 @@ function EditProfile() {
                                 placeholder='Your Experience'
                                 value={experience}
                                 onChange={(e) => setExperience(e.target.value)}
-                                 className="h-6 text-xs w-48 sm:h-6 lg:h-8 sm:w-52 lg:w-72 pl-3 rounded-xl outline-none border-2 border-white hover:border-green-500 focus:border-green-500" />
+                                 className="h-6 text-xs w-48 sm:h-6 lg:h-8 sm:w-52 lg:w-72 pl-3 rounded-xl outline-none border-2 border-white hover:border-green-500 focus:border-green-500 text-white" />
                         </div>
-                        <button className='text-sm px-4 py-1 rounded-xl bg-green-500 hover:bg-green-700 cursor-pointer'>Add</button>
+                        <button className='text-sm px-4 py-1 rounded-xl bg-green-500 hover:bg-green-700 cursor-pointer text-white'>Add</button>
                     </div>
                 </div>
 
                 {/* Projects Section */}
                 <div className="flex flex-col pt-8 gap-2">
-                    <p className="text-lg sm:text-xl lg:text-2xl font-bold">Projects</p>
+                    <p className="text-lg sm:text-xl lg:text-2xl font-bold text-white">Projects</p>
                     <div className='flex gap-2 sm:gap-5 lg:gap-10'>
                         <div className="flex flex-col gap-2">
                             <input
@@ -147,15 +147,15 @@ function EditProfile() {
                                 placeholder='Your Projects'
                                 value={project}
                                 onChange={(e) => setProject(e.target.value)}
-                                 className="h-6 text-xs w-48 sm:h-6 lg:h-8 sm:w-52 lg:w-72 pl-3 rounded-xl outline-none border-2 border-white hover:border-green-500 focus:border-green-500" />
+                                 className="h-6 text-xs w-48 sm:h-6 lg:h-8 sm:w-52 lg:w-72 pl-3 rounded-xl outline-none border-2 border-white hover:border-green-500 focus:border-green-500 text-white" />
                         </div>
-                        <button className='text-sm px-4 py-1 rounded-xl bg-green-500 hover:bg-green-700 cursor-pointer'>Add</button>
+                        <button className='text-sm px-4 py-1 rounded-xl bg-green-500 hover:bg-green-700 cursor-pointer text-white'>Add</button>
                     </div>
                 </div>
 
                 <NavLink to='/profile'>
                     <button
-                        className='text-sm sm:text-base lg:text-lg px-3 sm:px-3 lg:px-4 py-1 rounded-xl bg-green-500 mt-10 hover:bg-green-700 cursor-pointer'
+                        className='text-sm sm:text-base lg:text-lg px-3 sm:px-3 lg:px-4 py-1 rounded-xl bg-green-500 mt-10 hover:bg-green-700 cursor-pointer text-white'
                         onClick={() => dispatch(editedProfile({ image, firstName, lastName, completedProject, ongoingProject, education, experience, project }))}>Save</button>
                 </NavLink>
 

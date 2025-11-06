@@ -21,11 +21,11 @@ function AppliedJob() {
             <div className='pt-3 sm:pt-5 lg:pt-10 '>
               <h1 className='text-green-500 text-lg font-bold sm:text-xl sm:font-bold lg:text-3xl lg:font-bold'>{applyJob.jobTitle}</h1>
             </div>
-            <div className='flex flex-col gap-2 sm:gap-4 lg:gap-5 font-bold text-white '>
+            <div className='flex flex-col gap-2 sm:gap-4 lg:gap-5 font-bold '>
 
               <div className='flex flex-col gap-1 sm:gap-3 sm:pt-4 lg:pt-6 lg:gap-5'>
                 {/* company logo and name  */}
-                <div className='flex gap-1 items-center'>
+                <div className='flex gap-1 items-center text-white'>
                   <BusinessIcon
                     sx={{
                       fontSize: {
@@ -38,11 +38,11 @@ function AppliedJob() {
                       }
                     }}
                   />
-                  <p className='text-base sm:text-lg lg:text-xl'>{applyJob.companyName}</p>
+                  <p className='text-base sm:text-lg lg:text-xl text-white'>{applyJob.companyName}</p>
                 </div>
 
                 {/* location  */}
-                <div className='flex items-center'>
+                <div className='flex items-center text-white'>
                   <LocationOnIcon
                     sx={{
                       fontSize: {
@@ -55,16 +55,16 @@ function AppliedJob() {
                       }
                     }}
                   />
-                  <p className='text-base sm:text-lg lg:text-xl'>{applyJob.location}</p>
+                  <p className='text-base sm:text-lg lg:text-xl text-white'>{applyJob.location}</p>
                 </div>
               </div>
 
 
               {/* Job Details  */}
               <div className='flex flex-col gap-1 sm:gap-2'>
-                <p className='text-base sm:text-lg lg:text-xl font-bold'>Job Details</p>
+                <p className='text-base sm:text-lg lg:text-xl font-bold text-white'>Job Details</p>
 
-                <div className='flex items-center gap-1 pl-3'>
+                <div className='flex items-center gap-1 pl-3 text-white'>
                   <BusinessCenterIcon
                     sx={{
                       fontSize: {
@@ -77,12 +77,12 @@ function AppliedJob() {
                       }
                     }}
                   />
-                  <p className='text-xs sm:text-base lg:text-lg'>{applyJob.workTime}</p>
+                  <p className='text-xs sm:text-base lg:text-lg text-white'>{applyJob.workTime}</p>
                 </div>
 
-                <p className='text-xs sm:text-base lg:text-lg pl-3'>{applyJob.salary}</p>
+                <p className='text-xs sm:text-base lg:text-lg pl-3 text-white'>{applyJob.salary}</p>
 
-                <div className='flex items-center gap-1 pl-3'>
+                <div className='flex items-center gap-1 pl-3 text-white'>
                   <AccessTimeIcon
                     sx={{
                       fontSize: {
@@ -95,13 +95,13 @@ function AppliedJob() {
                       }
                     }}
                   />
-                  <p className='text-xs sm:text-base lg:text-lg'>{applyJob.postTime}</p>
+                  <p className='text-xs sm:text-base lg:text-lg text-white'>{applyJob.postTime}</p>
                 </div>
               </div>
 
             </div>
             <div className='pt-2 sm:pt-4 lg:pt-5'>
-              <p className='text-sm sm:text-base lg:text-lg'>{applyJob.description}</p>
+              <p className='text-sm sm:text-base lg:text-lg text-white'>{applyJob.description}</p>
             </div>
 
           </div>
@@ -112,38 +112,38 @@ function AppliedJob() {
             jobs.map((job, index) => (
 
 
-              <div className='bg-green-50 m-2 sm:m-4 lg:m-5 rounded-xl sm:rounded-2xl lg:rounded-4xl'>
+              <div className='bg-green-300 m-2 sm:m-4 lg:m-5 rounded-xl sm:rounded-2xl lg:rounded-4xl'>
                 <div className='flex flex-col gap-1.5 sm:gap-4 lg:gap-8 p-3 sm:p-5 lg:p-10'>
 
                   <div className='flex flex-col gap-2'>
                     {/* sending  */}
                     <div className='flex gap-1'>
-                      <p className='text-base sm:text-lg lg:text-xl font-bold'>to:</p>
-                      <p className='text-base sm:text-lg lg:text-xl font-bold'>{applyJob.shortName}</p>
+                      <p className='text-base sm:text-lg lg:text-xl font-bold text-white'>to:</p>
+                      <p className='text-base sm:text-lg lg:text-xl font-bold text-white'>{applyJob.shortName}</p>
                     </div>
 
                     {/* status  */}
                     <div className='flex gap-1'>
-                      <p className='text-base sm:text-lg lg:text-xl font-bold'>Status:</p>
+                      <p className='text-base sm:text-lg lg:text-xl font-bold text-white'>Status:</p>
                       <p className='text-base sm:text-lg lg:text-xl font-bold text-green-500'>Pending</p>
                     </div>
 
                     {/* salary  */}
                     <div className='flex gap-2 items-center'>
-                      <p className='text-base sm:text-lg lg:text-xl font-bold'>Expection Salary:</p>
-                      <p className='text-base sm:text-lg lg:text-xl font-bold'>{job.salary}</p>
+                      <p className='text-base sm:text-lg lg:text-xl font-bold text-white'>Expection Salary:</p>
+                      <p className='text-base sm:text-lg lg:text-xl font-bold text-white'>{job.salary}</p>
                     </div>
                   </div>
 
                   {/* project  */}
                   <div className='flex flex-col gap-3'>
-                    <p className='text-base sm:text-lg lg:text-xl font-bold'>Attach Projects</p>
+                    <p className='text-base sm:text-lg lg:text-xl font-bold text-white'>Attach Projects</p>
 
                     <div className='w-full flex gap-4'>
                       <div className='h-20 w-20 sm:h-40 sm:w-40 lg:h-60 lg:w-60 flex-shrink-0'>
                         <img src={job.image} className='h-full w-full outline-none object-cover border-1 sm:border-2 lg:border-3 border-white hover:border-green-500' />
                       </div >
-                      <p className='text-xs sm:text-base lg:text-lg font-semibold'>{job.projectDescription}</p>
+                      <p className='text-xs sm:text-base lg:text-lg font-semibold text-white'>{job.projectDescription}</p>
                     </div>
 
                   </div>
@@ -151,8 +151,8 @@ function AppliedJob() {
 
                   {/* job description  */}
                   <div className='flex flex-col gap-1 sm:gap-2 lg:gap-3'>
-                    <p className='text-base sm:text-lg lg:text-xl font-bold'>Purposal Letter</p>
-                    <p className='text-xs sm:text-base lg:text-lg font-semibold'>{job.proposalLetter}</p>
+                    <p className='text-base sm:text-lg lg:text-xl font-bold text-white'>Purposal Letter</p>
+                    <p className='text-xs sm:text-base lg:text-lg font-semibold text-white'>{job.proposalLetter}</p>
                   </div>
 
                 </div>

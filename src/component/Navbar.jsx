@@ -20,7 +20,7 @@ function Navbar() {
                     <NavLink to='/'>
                         <div className='flex items-center gap-1 sm:gap-2'>
                             <img src={Logo} alt="Logo" className='h-8 w-8 sm:h-10 sm:w-10 lg:h-12 lg:w-12 rounded-full overflow-hidden' />
-                            <h1 className='text-lg sm:text-xl lg:text-2xl font-bold'>HiredYou</h1>
+                            <h1 className='text-lg sm:text-xl lg:text-2xl font-bold text-white'>HiredYou</h1>
                         </div>
                     </NavLink>
 
@@ -49,8 +49,19 @@ function Navbar() {
                 <div className='flex items-center gap-3 sm:gap-4 '>
 
                     <NavLink to='/postjob'>
-                        <div className='flex items-center gap-0.5'>
-                            <AllInboxIcon sx={{ fontSize: { xs: 16, md: 20, lg: 22, xl: 24 } }} />
+                        <div className='flex items-center gap-0.5 text-white'>
+                            <AllInboxIcon
+                                sx={{
+                                    fontSize: {
+                                        xxs: 12,
+                                        xs: 12,
+                                        sm: 14,
+                                        md: 16,
+                                        lg: 18,
+                                        xl: 20,
+                                    }
+                                }}
+                            />
                             <p className='text-sm sm:text-base lg:text-lg font-semibold text-white'>Post</p>
                         </div>
                     </NavLink>
