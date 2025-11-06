@@ -30,17 +30,17 @@ function Navbar() {
                             value={inputTitle}
                             onChange={(e) => setInputTitle(e.target.value)}
                             placeholder='Job Title, Skills Or Company'
-                            className="h-6 text-xs w-48 sm:h-7 lg:h-8 sm:w-52 lg:w-72 pl-3 rounded-xl outline-none border-2 border-white hover:border-green-500 focus:border-green-500" />
+                            className="h-6 text-xs w-48 sm:h-7 lg:h-8 sm:w-52 lg:w-72 pl-3 rounded-xl outline-none text-white border-2 border-white hover:border-green-500 focus:border-green-500" />
 
                         <input
                             type="text"
                             value={inputLocation}
                             onChange={(e) => setInputLocation(e.target.value)}
                             placeholder='City, State, Zip Or Remote'
-                            className="h-6 text-xs w-48 sm:h-7 lg:h-8 sm:w-52 lg:w-72 pl-3 rounded-xl outline-none border-2 border-white hover:border-green-500 focus:border-green-500" />
+                            className="h-6 text-xs w-48 sm:h-7 lg:h-8 sm:w-52 lg:w-72 pl-3 rounded-xl outline-none text-white border-2 border-white hover:border-green-500 focus:border-green-500" />
 
                         <button
-                            className='bg-green-500 w-18 rounded-xl font-semibold hover:bg-green-700 pointer-coarse:'
+                            className='bg-green-500 w-18 rounded-xl font-semibold hover:bg-green-700 pointer-coarse text-white'
                             onClick={() => dispatch(inputsValue({ inputTitle, inputLocation }))}
                         >Search</button>
                     </div>
@@ -51,7 +51,7 @@ function Navbar() {
                     <NavLink to='/postjob'>
                         <div className='flex items-center gap-0.5'>
                             <AllInboxIcon sx={{ fontSize: { xs: 16, md: 20, lg: 22, xl: 24 } }} />
-                            <p className='text-sm sm:text-base lg:text-lg font-semibold'>Post</p>
+                            <p className='text-sm sm:text-base lg:text-lg font-semibold text-white'>Post</p>
                         </div>
                     </NavLink>
 
