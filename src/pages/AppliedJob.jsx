@@ -23,7 +23,7 @@ function AppliedJob() {
             </div>
             <div className='flex flex-col gap-2 sm:gap-4 lg:gap-5 font-bold text-white '>
 
-              <div className='flex flex-col gap-1 sm:gap-3 lg:gap-5'>
+              <div className='flex flex-col gap-1 sm:gap-3 sm:pt-4 lg:pt-6 lg:gap-5'>
                 {/* company logo and name  */}
                 <div className='flex gap-1 items-center'>
                   <BusinessIcon
