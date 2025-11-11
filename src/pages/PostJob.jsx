@@ -70,7 +70,7 @@ function PostJob() {
                     <textarea
                         value={jobDescription}
                         onChange={(e) => setJobDescription(e.target.value)}
-                        className='text-white h-80 w-full p-1.5 text-xs bg-gray-100 outline-none sm:p-2 sm:text-base lg:p-4 lg:text-lg hover:border-2 hover:border-green-500 focus:border-2 focus:border-green-500' placeholder='Job description...'></textarea>
+                        className='text-white h-80 w-full p-1.5 text-xs bg-black outline-none sm:p-2 sm:text-base lg:p-4 lg:text-lg border-2 border-white hover:border-green-500 focus:border-2 focus:border-green-500' placeholder='Job description...'></textarea>
                 </div>
 
                 <NavLink to="/">

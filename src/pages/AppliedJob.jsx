@@ -13,7 +13,7 @@ function AppliedJob() {
   const jobs = useSelector((state) => state.jobData.savedJobs)
 
   return (
-    <div className='bg-black w-full h-full px-3 sm:px-5 lg:p-10'>
+    <div className='bg-black w-full px-3 sm:px-5 lg:p-10'>
       <div className='flex flex-col gap-20'>
 
         <div className='flex flex-col gap-10 border-1 sm:border-2 lg:border-4 border-green-500 rounded-4xl'>
@@ -107,12 +107,12 @@ function AppliedJob() {
           </div>
 
           {jobs.length === 0 ? (
-            <p>No jobs applied yet!</p>
+            <p className='xs:text-lg md:text-xl lg:text-2xl font-bold text-red-700 flex justify-center xs:pb-2 md:pb-5'>No jobs applied yet!</p>
           ) : (
             jobs.map((job, index) => (
 
 
-              <div className='bg-green-300 m-2 sm:m-4 lg:m-5 rounded-xl sm:rounded-2xl lg:rounded-4xl'>
+              <div className='bg-green-800 m-2 sm:m-4 lg:m-5 rounded-xl sm:rounded-2xl lg:rounded-4xl'>
                 <div className='flex flex-col gap-1.5 sm:gap-4 lg:gap-8 p-3 sm:p-5 lg:p-10'>
 
                   <div className='flex flex-col gap-2'>

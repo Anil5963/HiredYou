@@ -59,7 +59,7 @@ function JobApply() {
                     <textarea 
                     value={projectDescription}
                     onChange={(e) => setProjectDescription(e.target.value)}
-                    className='h-32 p-1.5 text-xs w-full bg-gray-100 outline-none sm:p-2 sm:text-base lg:p-4 lg:text-lg hover:border-2 hover:border-green-500 focus:border-2 focus:border-green-500 text-white' placeholder='Project Description...'></textarea>
+                    className='h-32 p-1.5 text-xs w-full bg-black outline-none sm:p-2 sm:text-base lg:p-4 lg:text-lg border-2 border-white hover:border-green-500 focus:border-2 focus:border-green-500 text-white' placeholder='Project Description...'></textarea>
 
                 </div>
 
@@ -70,7 +70,7 @@ function JobApply() {
                     <textarea 
                     value={proposalLetter}
                     onChange={(e) => setProposalLetter(e.target.value)}
-                    className='h-80 w-full p-1.5 text-xs bg-gray-100 outline-none sm:p-2 sm:text-base lg:p-4 lg:text-lg hover:border-2 hover:border-green-500 focus:border-2 focus:border-green-500 text-white' placeholder='Purposal Letter...'></textarea>
+                    className='h-80 w-full p-1.5 text-xs bg-black outline-none sm:p-2 sm:text-base lg:p-4 lg:text-lg border-2 border-white hover:border-green-500 focus:border-green-500 text-white' placeholder='Purposal Letter...'></textarea>
                 </div>
 
                 {/* submit  */}
